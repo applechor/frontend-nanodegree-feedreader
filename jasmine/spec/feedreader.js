@@ -111,7 +111,7 @@ $(function() {
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous.
          */
-        // Asynchronous done() function
+        // Asynchronous function which os loaded before testing
         beforeEach(function(done) {
             // load feed index 0
             loadFeed(0, done);
@@ -139,7 +139,7 @@ $(function() {
      // create empty array
     var firstFeed = [],
         secondFeed = [];
-        // Asynchronous done() function
+        // Asynchronous function which os loaded before testing
         beforeEach(function(done) {
             // load feed index 0
             loadFeed(0, function() {
