@@ -1,4 +1,5 @@
-'use strict'
+/* jshint node: true */
+'use strict';
 
 /* feedreader.js
  *
@@ -28,12 +29,12 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-         /**
+        /**
          * @description: A test that loops through each feed
          * in the allFeeds object and it has a URL defined
          * and that the URL is not empty.
          */
-         it('has a URL defined', function() {
+        it('has a URL defined', function() {
             // Fetch each data of allFeeds object
             for (let allFeed of allFeeds) {
                 // get the URL
@@ -43,14 +44,14 @@ $(function() {
                 // check the length of URL is not empty
                 expect(hasUrl.length).not.toBe(0);
             }
-         });
+        });
 
         /**
          * @description: A test that loops through each feed
          * in the allFeeds object and it has a name defined
          * and that the name is not empty.
          */
-         it('has a name defined', function() {
+        it('has a name defined', function() {
             // Fetch each data of allFeeds object
             for (let allFeed of allFeeds) {
                 // get the name
@@ -60,7 +61,7 @@ $(function() {
                 // check the length of name is not empty
                 expect(hasName.length).not.toBe(0);
             }
-         });
+        });
     });
 
     /**
@@ -75,20 +76,20 @@ $(function() {
             // Fetch data from class menu-icon-link
             menuIcon = document.querySelector('.menu-icon-link');
         });
-        
+
         /**
          * @description: A test that the menu element is hidden by default. 
          */
-         it('is hidden by default', function() {
+        it('is hidden by default', function() {
             // check the menu id hidden
-            expect(menuHidden.classList.value).toBe('menu-hidden');            
-         });
+            expect(menuHidden.classList.value).toBe('menu-hidden');
+        });
 
         /**
          * @description: A test that the menu changes visibility 
          * when the menu icon is clicked.
          */
-          it('changes visibility when the menu icon is clicked', function() {
+        it('changes visibility when the menu icon is clicked', function() {
             // click first time 
             menuIcon.click();
             // the menu display when clicked 
@@ -97,7 +98,7 @@ $(function() {
             menuIcon.click();
             // the menu hide when clicked again
             expect(menuHidden.classList.value).toBe('menu-hidden');
-          });
+        });
     });
 
     /**
@@ -111,11 +112,11 @@ $(function() {
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous.
          */
-        // Asynchronous function which os loaded before testing
+        // Asynchronous function which is loaded before testing
         beforeEach(function(done) {
             // load feed index 0
             loadFeed(0, done);
-         });
+        });
 
         it('has at least one entry element ', function() {
             var FeedContainer = document.querySelector('.feed');
@@ -123,7 +124,7 @@ $(function() {
             var entryElement = FeedContainer.querySelector('.entry');
             // Check entry element shuold ot empty
             expect(entryElement).toBeGreaterThan('');
-         });
+        });
     });
 
     /**
@@ -131,15 +132,15 @@ $(function() {
      */
     describe('New Feed Selection', function() {
 
-    /**
-     * @description:  Write a test that when a new feed is loaded
-     * by the loadFeed function that the content actually changes.
-     * Remember, loadFeed() is asynchronous.
-     */
-     // create empty array
-    var firstFeed = [],
-        secondFeed = [];
-        // Asynchronous function which os loaded before testing
+        /**
+         * @description:  Write a test that when a new feed is loaded
+         * by the loadFeed function that the content actually changes.
+         * Remember, loadFeed() is asynchronous.
+         */
+        // create empty array
+        var firstFeed = [],
+            secondFeed = [];
+        // Asynchronous function which is loaded before testing
         beforeEach(function(done) {
             // load feed index 0
             loadFeed(0, function() {
@@ -166,12 +167,11 @@ $(function() {
         it('a new feed is loaded when the content changes', function() {
             //compare each data in loadFeed index 0 to each data in loadFeed index 1
             for (let i = 0; i < firstFeed.length; i++) {
-                for (let j = 0; j < secondFeed.length; j++) {
-                }
+                for (let j = 0; j < secondFeed.length; j++) {}
             }
             // check each data in loadFeed index 0 is not equal each data in loadFeed index 1
             expect(firstFeed).not.toBe(secondFeed);
-         });
+        });
     });
 
 }());
