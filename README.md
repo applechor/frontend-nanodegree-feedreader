@@ -7,6 +7,7 @@ The testing project is a web-based application that reads RSS feeds. It already 
 * Framework
 * Getting started with this project
 * Unit testing
+* Reference Resource
 
 
 ## Framework
@@ -28,30 +29,50 @@ For more information about [getting started with jasmine](https://jasmine.github
 * open `jasmine/spec/feedreader.js` with text editor to write the sutie tests, spec tests and expectation function.
 
 ## Unit testing
+Here is a list of testing which run against your application
 
-* Write a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
+* In a suite named `RSS Feeds`.
 
-* Write a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
+  * Write a test spec that loops through each feed in the allFeeds object to get _URL_ property. This test has two expectations:
+    
+    1.it has a URL defined
+    
+    2.the URL is not empty 
 
-* Write a new test suite named "The menu".
+  * Write a test spec that loops through each feed in the allFeeds object to get _name_ property. This test has two expectations:
+    
+    1.it has a name defined.
+    
+    2.the name is not empty.
 
-* Write a test that ensures the menu element is hidden by default. You'll have to analyze the HTML and the CSS to determine how we're performing the hiding/showing of the menu element.
+* Create a new test suite named `The menu`.
 
-* Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display when clicked and does it hide when clicked again.
+  * Write a test spec that ensures the menu element is hidden by default. The expectation is:
+  
+    1.the menu element is hidden.
 
-* Write a test suite named "Initial Entries".
+  * Write a test spec that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: 
+    
+    1.the menu display when clicked.
+    
+    2.it hide when clicked again.
 
-* Write a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
+* Create a test suite named `Initial Entries`.
 
-* Write a test suite named "New Feed Selection".
+  * Write a test spec that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container. The expectation is:
+  
+    1.the loadFeed has at least one entry element.
 
-* Write a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes.
+* Create a test suite named `New Feed Selection`.
 
-
-
+  * Write a test spec that ensures when a new feed is loaded by the loadFeed function that the content actually changes. The expectation is:
+  
+    1.each entry elements of prior feed does not the same as each entry elements of new feed.
+    
+## To run the unit tests
 
 
 ## Reference Resource
   
-   * 
+   * [Udacity Feed Reader Testing Project](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
 
