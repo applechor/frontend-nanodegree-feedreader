@@ -55,7 +55,7 @@ Here is a list of testing which run against your application
 
 * There is no test should be dependent on the results of another.
 
-* Callbacks should be used for asynchronous test to ensure that feeds are loaded before they are tested.
+* Callbacks, beforeEach() and done() should be used for asynchronous test to ensure that feeds are loaded before they are tested.
 
 * Defined variables and arrays.
 
