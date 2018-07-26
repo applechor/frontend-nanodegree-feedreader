@@ -5,9 +5,9 @@ The testing project is a web-based application that reads RSS feeds. It already 
 ## Table of Contents
 
 * [Framework](#framework)
-* Getting started with this project
-* Unit testing
-* Check again before complete the testing
+* [Getting started with this project](#getting-started-with-this-project)
+* [Unit testing](#unit-testing)
+* [Check again before complete the testing](#check-again-before-complete-the-testing)
 * [Reference Resources](#reference-resources)
 
 ## Framework
@@ -61,7 +61,7 @@ Here is a list of testing which run against your application
 
 * When complete - all of the tests should pass.
 
-## Reference Resource
+## Reference Resources
   
    * [Udacity Feed Reader Testing Project](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
    
