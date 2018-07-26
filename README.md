@@ -4,11 +4,11 @@ The testing project is a web-based application that reads RSS feeds. It already 
 
 ## Table of Contents
 
-* Framework
+* [Framework](#framework)
 * Getting started with this project
 * Unit testing
 * Check again before complete the testing
-* Reference Resources
+* [Reference Resources](#reference-resources)
 
 ## Framework
 
