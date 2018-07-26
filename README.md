@@ -7,8 +7,8 @@ The testing project is a web-based application that reads RSS feeds. It already 
 * Framework
 * Getting started with this project
 * Unit testing
-* To complete the testing project
-* Reference Resource
+* Check again before complete the testing
+* Reference Resources
 
 ## Framework
 
@@ -51,17 +51,19 @@ Here is a list of testing which run against your application
 
   * Write a test spec that ensures when a new feed is loaded by the loadFeed function that the content actually changes. The expectation is each entry elements of prior feed does not the same as each entry elements of new feed.
     
-## To complete the testing project
+## Check again before complete the testing
 
-* No test should be dependent on the results of another.
+* There is no test should be dependent on the results of another.
 
-* Callbacks should be used to ensure that feeds are loaded before they are tested.
+* Callbacks should be used for asynchronous test to ensure that feeds are loaded before they are tested.
 
-* Implement error handling for undefined variables and out-of-bound array access.
+* Defined variables and arrays.
 
-* When complete - all of your tests should pass.
+* When complete - all of the tests should pass.
 
 ## Reference Resource
   
    * [Udacity Feed Reader Testing Project](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
+   
+   * [Get local href value from anchor (a) tag](https://stackoverflow.com/questions/15439853/get-local-href-value-from-anchor-a-tag)
 
