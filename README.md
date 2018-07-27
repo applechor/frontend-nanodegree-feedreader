@@ -1,6 +1,6 @@
 # Feed Reader Testing Project
 
-The testing project is a web-based application that reads RSS feeds. It already provided some source codes and write first test suite. You have to continuously write the tests and/or the expected functions until ensures your application shows with no errors.
+This testing project is a web-based application that reads RSS feeds with javascript. It already provided some source codes and write first test suite. You have to continuously write the tests and/or the expected functions until ensures your application shows with no errors.
 
 ## Table of Contents
 
