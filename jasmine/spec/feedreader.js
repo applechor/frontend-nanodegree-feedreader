@@ -68,6 +68,7 @@ $(function() {
      * @description: A new test suite named "The menu" 
      */
     describe('The menu', function() {
+        // define variables
         var menuHidden,
             menuIcon;
         beforeEach(function() {
@@ -137,7 +138,7 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        // create empty array
+        // create empty arrays
         var firstFeed = [],
             secondFeed = [];
         // Asynchronous function which is loaded before testing
